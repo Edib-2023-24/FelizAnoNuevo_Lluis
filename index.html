@@ -34,36 +34,41 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
-    <script src="preloader.js"></script>
+    <!-- <script src="preloader.js"></script> -->
   </head>
+
   <body>
-    <div id="container">
+    <div id="container" class="container">
       <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
+
       <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
+
+      <main class="contador">
+        <aside class="barra-lateral" id="barra-lateral"></aside>
+
+        <!--  -->
+        <h4 class="minutos" id="minutos">00</h4>
+        <h5 class="minutos">min</h5>
+
+        <!--  -->
+        <h4 class="horas" id="horas">00</h4>
+        <h5 class="horas">horas</h5>
+
+        <!--  -->
+        <h4 class="dias" id="dias">00</h4>
+        <h5 class="dias">días</h5>
+
+        <!--  -->
+        <h4 class="segundos" id="segundos"></h4>
       </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
     </div>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

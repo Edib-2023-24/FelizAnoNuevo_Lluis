@@ -6,14 +6,93 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
+body {
+  background: url(../img/desktop/Frame\ 3fondo.webp) no-repeat fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  margin: 2.5% 0 0 0;
+  line-height: 0.8;
+  align-items: end;
+  display: grid;
+  grid-template-columns: 65px auto auto;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 138px;
+  column-gap: 18px;
+
+  & h4 {
+    font-family: hind-bold;
+    font-size: 181px;
+    grid-column: 2/3;
+  }
+
+  & h5 {
+    font-family: hind;
+    font-size: 50px;
+    grid-column: 3/4;
+  }
+
+  & .minutos {
+    color: var(--amarillomedio);
+    grid-row: 1/2;
+  }
+
+  & .horas {
+    color: var(--amarillooscuro);
+    grid-row: 2/3;
+  }
+
+  & .dias {
+    color: var(--amarilloquemao);
+    grid-row: 3/4;
+  }
+
+  & .barra-lateral {
+    align-self: start;
+    grid-column: 1/2;
+    grid-row: 1/4;
+
+    background: linear-gradient(
+      180deg,
+      var(--amarillo) 0%,
+      var(--amarillomedio) 28.13%,
+      var(--amarillooscuro) 56.2%,
+      var(--amarilloquemao) 81.76%
+    );
+  }
+}
+
+& .segundos {
+  display: none;
+}
+
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "hind";
+  src: url("../font/hind-light-webfont.woff2") format("woff2"),
+    url("../font/hind-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hind-bold";
+  src: url("../font/hind-bold-webfont.woff2") format("woff2"),
+    url("../font/hind-bold-webfont.woff") format("woff");
 }
 
 /* ******************************** */
 
 /* Colores */
+:root {
+  --amarillo: #dfa704;
+  --amarillomedio: #b97d04;
+  --amarillooscuro: #b97d04;
+  --amarilloquemao: #715d36;
+}
 
 /* ******************************** */
